@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="../img/Designer.png" width="50" height="" alt="No se ha encontrado una imagen">
+            <h1 class="professional-text">
+                <span class="aprende">Aprende</span><span class="jugando">Jugando</span>
+            </h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="./SobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a href="./Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="NivelElegir">
+        <h1>¿QUÉ QUIERES APRENDER HOY?</h1>
+    </div>
+
+    <!-- Botón para mostrar la ventana emergente de colores -->
+    <button class="show-color-info" onclick="tarea.openColorInfo()">¿Qué significa cada color?</button>
+
+    <main>
+        <div class="exercise-selection">
+            <button class="exercise-button" data-difficulty="normal" onclick="location.href='Calculadora.html'">Calculadora Interactiva</button>
+            <button class="exercise-button" data-difficulty="normal" onclick="location.href='NumBinAHex.html'">Convertir Número Binario a Hexadecimal y Viceversa</button>
+            <button class="exercise-button" data-difficulty="normal" onclick="location.href='NumBinADeci.html'">Convertir Número Binario a Decimal y Viceversa</button>
+            <button class="exercise-button" data-difficulty="normal" onclick="location.href='ContarEnText.html'">Contar caracteres, vocales, signos, espacios, palabras y dígitos en un texto</button>
+            <button class="exercise-button" data-difficulty="normal" onclick="location.href='InvertirCad.html'">Invertir una cadena de texto</button>
+            <button class="exercise-button" data-difficulty="normal" onclick="location.href='MasPalabras.html'">Dado dos frases indicar cual tiene más palabras</button>
+            <button class="exercise-button" data-difficulty="hard" onclick="location.href='ArreNumPrim.html'">Dado un arreglo obtener los números primos</button>
+            <button class="exercise-button" data-difficulty="hard" onclick="location.href='ArreNumPerf.html'">Dado un arreglo obtener los números perfectos</button>
+            <button class="exercise-button" data-difficulty="hard" onclick="location.href='NotaPromMod.html'">Dado un arreglo de notas obtener el promedio y la moda</button>
+        </div>
+    </main>
+
+    <!-- Ventana emergente para el significado de los colores -->
+    <div id="color-info" class="color-info">
+        <div class="color-info-content">
+            <span class="close-btn" onclick="tarea.closeColorInfo()">&times;</span>
+            <h2>Significado de los Colores</h2>
+            <ul>
+                <li><span class="color-box easy"></span> Verde = Fácil</li>
+                <li><span class="color-box medium"></span> Naranja = Medio</li>
+                <li><span class="color-box hard"></span> Rojo = Difícil</li>
+            </ul>
+        </div>
+    </div>
+    <script src="../js/2.JS"></script>
+</body>
+</html>

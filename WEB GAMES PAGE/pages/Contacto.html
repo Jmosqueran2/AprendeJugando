@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" type="image/png" href="../img/Designer.png">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="icon" href="../img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="../img/Designer.png" width="50" height="" alt="No se ha encontrado una imagen">
+            <h1 class="professional-text">
+                <span class="aprende">Aprende</span><span class="jugando">Jugando</span>
+            </h1>
+        </a>
+    </header>
+    <div id="contacto">
+        <h1>CONTACTA AL EQUIPO DE SERVICIO TÉCNICO DE "APRENDE JUGANDO"</h1>
+        <h4>Tus requerimientos son de nuestro interés...</h4>
+        
+        <div id="formulario">
+            <form onsubmit="mostrarAgradecimiento(event)">
+                <div>
+                    <label>Ingresa tus dos nombres:</label>
+                    <input type="text" id="area">
+                </div>
+                <div>
+                    <label>Ingresa tus dos apellidos:</label>
+                    <input type="text" id="area">
+                </div>
+                <div>
+                    <label>Ingresa tu edad:</label>
+                    <input type="number" id="area">
+                </div>
+                <div>
+                    <label>Ingresa tu número de celular:</label>
+                    <input type="tel" id="area">
+                </div>
+                <div>
+                    <label>Ingresa tu correo electrónico:</label>
+                    <input type="email" id="area">
+                </div>
+                <div>
+                    <label>Haznos saber tu problema aquí:</label>
+                    <textarea id="area"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" id="enviar">
+                </div>
+            </form>
+            <div class="mensaje-agradecimiento" id="mensajeAgradecimiento">
+                Gracias por comunicarte con nosotros.
+            </div>
+        </div>
+    </div>
+    <script>
+        function mostrarAgradecimiento(event) {
+            event.preventDefault()
+            document.getElementById('mensajeAgradecimiento').style.display = 'block'
+        }
+    </script>
+</body>
+</html>

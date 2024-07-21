@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Factorial</title>
+  <link rel="stylesheet" href="../css/StyleSN.css">
+  <link rel="icon" href="../img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+        <img src="../img/Designer.png" width="50" height="" alt="No se ha encontrado una imagen">
+        <h1 class="professional-text">
+            <span class="aprende">Aprende</span><span class="jugando">Jugando</span>
+        </h1>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="./SobreNosotros.html">Sobre Nosotros</a></li>
+            <li><a href="./Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="NivelElegir">
+  <h1>Adivina el Número Oculto</h1>
+  <p>He pensado en un número entre <span id="min-range">1</span> y <span id="max-range">100</span>.</p>
+
+</div>
+<div class="game-container">
+  <div class="exercise-selection">
+    <input type="number" id="guess" placeholder="Introduce tu adivinanza" min="1">
+    <button class="button play-button" onclick="checkGuess()">Adivinar</button>
+    <p id="result"></p>
+    <button class="button play-button" onclick="restartGame()">Reiniciar Juego</button>
+  </div>
+  
+
+  <script src="../js/Acertijo.js"></script>
+</body>
+</html>

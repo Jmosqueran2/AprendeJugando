@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promedio y Moda de Notas</title>
+  <link rel="stylesheet" href="../css/StyleSN.css">
+  <link rel="icon" href="../img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+        <img src="../img/Designer.png" width="50" height="" alt="No se ha encontrado una imagen">
+        <h1 class="professional-text">
+            <span class="aprende">Aprende</span><span class="jugando">Jugando</span>
+        </h1>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="./SobreNosotros.html">Sobre Nosotros</a></li>
+            <li><a href="./Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="NivelElegir">
+  <h1>Promedio y Moda de Notas</h1>
+</div>
+<div class="game-container">
+  <div class="exercise-selection">
+    <label for="grades-input">Ingrese un arreglo de notas (separadas por comas):</label>
+    <input type="text" id="grades-input" placeholder="Ejemplo: 85, 90, 85, 70, 90, 100">
+    <button class="button play-button" onclick="tarea.calculateStats()">Calcular</button>
+    
+    <p id="average-result">Promedio: </p>
+    <p id="mode-result">Moda: </p>
+  </div>
+  
+  <script src="../js/2.JS"></script>
+</body>
+</html>

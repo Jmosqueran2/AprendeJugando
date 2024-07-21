@@ -1,0 +1,409 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../img/OQ3D1U0.jpg");
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/* Estilos de encabezado */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%; 
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}   
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    margin-right: 10px;
+}
+
+.professional-text {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.aprende {
+    color: #0044CC;
+}
+
+.jugando {
+    color: #FF0000;
+    text-shadow: -1px -1px 0 #838282,  
+                 1px -1px 0 #838282,
+                -1px  1px 0 #838282,
+                 1px  1px 0 #838282;
+}
+
+.professional-text::after {
+    content: attr(data-shadow);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    color: rgb(0, 0, 0);
+    z-index: -1;
+}
+
+/* Estilos de navegación */
+.NivelElegir{
+    text-align: center;
+    padding-top: 45px;
+    margin: 0;
+    font-size: 22px;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 21px;
+    text-shadow: -1px -1px 0 #ffffff,  
+                 1px -1px 0 #ffffff,
+                -1px  1px 0 #ffffff,
+                 1px  1px 0 #ffffff;   
+}
+
+nav a:hover {
+    color: #555555;
+}
+
+nav li::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 20px;
+    background-color: #0026ff;
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav li:last-child::after {
+    content: none;
+}
+
+main {
+    padding: 20px;
+    margin-top: 70px; 
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    position: relative; 
+    border: 2px solid #494747;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.menu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/20252.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; 
+    z-index: -1;
+}
+
+.menu-item {
+    flex: 1;
+    margin: 17px;
+    padding: 50px;
+    background-color: #e7f7e1ce;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menu-item h2 {
+    color: #FF0000; 
+    font-size: 30px;
+}
+
+.menu-item p {
+    color: #333333;
+}
+.play-button {
+    background-color: #f3a939;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #f3cf58;
+    transform: scale(1.1);
+}
+
+.play-button:active {
+    background-color: #ff830f;
+    transform: scale(1.05);
+}
+.exercise-selection {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 25px;
+    border: 1px solid #000;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+.exercise-selection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/20252.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; 
+    z-index: -1; 
+}
+
+.exercise-button {
+    padding: 15px 25px;
+    border-radius: 88px;
+    background-color: #eeae4f;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+.exercise-button:hover{
+    background-color: #f39b16;
+    transform: scale(1.1);
+}
+.exercise-button[data-difficulty="easy"] {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+.exercise-button[data-difficulty="normal"] {
+    background-color: #FFC107; /* Naranja */
+    color: white;
+}
+
+.exercise-button[data-difficulty="hard"] {
+    background-color: #F44336; /* Rojo */
+    color: white;
+}
+
+.game-container {
+    text-align: center;
+    margin: 20px;
+}
+.sequence {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.input {
+    font-size: 18px;
+    padding: 5px;
+    width: 50px;
+}
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #f9a825;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: #ffeb3b;
+}
+.result {
+    font-size: 20px;
+    margin-top: 20px;
+}
+/* Estilos de la leyenda de colores */
+.difficulty-legend {
+    margin: 20px;
+    border-radius: 8px;
+    padding: 0px;
+}
+
+.difficulty-legend h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.difficulty-legend ul {
+    list-style: none;
+    padding: 0;
+}
+
+.difficulty-legend li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.color-box.easy {
+    background-color: #4CAF50; /* Verde */
+}
+
+.color-box.medium {
+    background-color: #FFC107; /* Naranja */
+}
+
+.color-box.hard {
+    background-color: #F44336; /* Rojo */
+}
+/* Estilos de ventana emergente para el significado de los colores */
+.color-info {
+    display: none; /* Ocultar por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.color-info-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.color-info-content h2 {
+    margin-top: 0;
+}
+
+.color-info-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.color-info-content ul li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.color-box.easy {
+    background-color: green;
+}
+
+.color-box.medium {
+    background-color: orange;
+}
+
+.color-box.hard {
+    background-color: red;
+}
+
+/* Botón para mostrar la ventana emergente de colores */
+.show-color-info {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.show-color-info:hover {
+    background-color: #0056b3;
+}
+
+.show-color-info:focus {
+    outline: none;
+}

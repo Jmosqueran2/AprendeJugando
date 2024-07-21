@@ -1,0 +1,211 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../img/OQ3D1U0.jpg");
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("");
+    background-size: cover; 
+    background-position: center; 
+    object-fit: cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/* Estilos de encabezado */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    margin-right: 10px;
+}
+
+.professional-text {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.aprende {
+    color: #0044CC;
+}
+
+.jugando {
+    color: #FF0000;
+    text-shadow: -1px -1px 0 #838282,  
+                 1px -1px 0 #838282,
+                -1px  1px 0 #838282,
+                 1px  1px 0 #838282;
+}
+
+.professional-text::after {
+    content: attr(data-shadow);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    color: rgb(0, 0, 0);
+    z-index: -1;
+}
+.CalculadoraInteractiva{
+    text-align: center;
+    padding-top: 25px;
+    margin: 0;
+    font-size: 22px;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: #ff0000;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 21px;
+    text-shadow: -1px -1px 0 #ffffff,  
+                 1px -1px 0 #ffffff,
+                -1px  1px 0 #ffffff,
+                 1px  1px 0 #ffffff;   
+}
+
+nav a:hover {
+    color: #555555;
+}
+
+nav li::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 20px;
+    background-color: #0026ff;
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav li:last-child::after {
+    content: none;
+}
+
+/* Estilos de la calculadora */
+.calculator {
+    width: 300px;
+    height: 400px; /* Aumentar altura para acomodar botones */
+    margin: 50px auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    background: #39bcf0;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border-bottom: 2px solid #333;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+}
+
+.btn {
+    padding: 15px 0;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+    background: #eee;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+
+/* Estilos de operadores */
+.operator {
+    background: #f7b733;
+    color: #fff;
+}
+
+.operator:hover {
+    background: #f5a623;
+}
+
+/* Estilo del botón + */
+.operator.plus {
+    background: #ffcc00; /* Color distintivo para el botón + */
+    grid-column: span 2; /* Ocupa una columna en la grid */
+}
+
+/* Estilos de botón = y Clear */
+.equals {
+    background: #33cc33;
+    color: #fff;
+    grid-column: span 2; /* Ocupa el espacio de dos columnas */
+}
+.equals:hover {
+    background: #28a745;
+}
+
+.clear {
+    background: #ff6666;
+    color: #fff;
+    grid-column: span 2; /* Ocupa el espacio de dos columnas */
+}
+
+.clear:hover {
+    background: #e60000;
+}
+
+.bottom-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px;
+    padding: 5px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos - Secuencias Numéricas</title>
+    <link rel="stylesheet" href="../css/StyleSN.css">
+    <link rel="icon" href="../img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="../img/Designer.png" width="50" height="" alt="No se ha encontrado una imagen">
+            <h1 class="professional-text">
+                <span class="aprende">Aprende</span><span class="jugando">Jugando</span>
+            </h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="./SobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a href="./Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="NivelElegir">
+            <h1>Completa la secuencia de Números</h1>
+        </div>
+        <div class="game-container">
+            <div class="exercise-selection">
+                <div id="question" class="sequence"></div>
+                <input type="text" id="answer" class="input" />
+                <button class="button play-button" onclick="play.checkAnswer()">Siguiente</button>
+                <div id="result" class="result"></div>
+                <button class="button reintentar-button" onclick="play.restartGame()">Reintentar</button>
+            </div>
+        </div>
+    </main>
+    <script src="../js/Main.js"></script>
+</body>
+</html>

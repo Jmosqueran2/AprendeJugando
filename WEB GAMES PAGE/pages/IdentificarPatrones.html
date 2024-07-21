@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Multiplicar y Sumar</title>
+    <link rel="stylesheet" href="../css/StyleSN.css">
+    <link rel="icon" href="../img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="../img/Designer.png" width="50" height="" alt="No se ha encontrado una imagen">
+            <h1 class="professional-text">
+                <span class="aprende">Aprende</span><span class="jugando">Jugando</span>
+            </h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="./SobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a href="./Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="NivelElegir">
+        <h1>Identificar Repeticiones</h1>
+    </div>
+    <div class="exercise-selection">
+    <div class="game-container">
+        <p id="generated-sequence"></p>
+        <p id="number-to-find"></p>
+        <label for="guess">¿Cuántas veces crees que se repite?</label>
+        <input type="number" id="guess" placeholder="Cantidad">
+        <br><br>
+        <div class="button-container">
+            <button class="button" onclick="juego.checkGuess()">Verificar</button>
+            <button class="button" onclick="juego.retry()">Reintentar</button>
+        </div>
+        <p id="result"></p>
+    </div>
+    </div>
+    <script src="../js/IdentificarRepit.js"></script>
+</body>
+</html>

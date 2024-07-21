@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Interactiva</title>
+    <link rel="stylesheet" href="../css/Calculadora.css">
+    <link rel="icon" href="../img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="../img/Designer.png" width="50" height="" alt="No se ha encontrado una imagen">
+            <h1 class="professional-text">
+                <span class="aprende">Aprende</span><span class="jugando">Jugando</span>
+            </h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="./SobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a href="./Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="CalculadoraInteractiva">
+            <h1>Calculadora Interactiva</h1>
+        </div>
+        <div class="calculator">
+            <div class="display" id="display">0</div>
+            <div class="buttons">
+                <button class="btn" onclick="appendNumber('7')">7</button>
+                <button class="btn" onclick="appendNumber('8')">8</button>
+                <button class="btn" onclick="appendNumber('9')">9</button>
+                <button class="btn operator" onclick="setOperator('/')">÷</button>
+
+                <button class="btn" onclick="appendNumber('4')">4</button>
+                <button class="btn" onclick="appendNumber('5')">5</button>
+                <button class="btn" onclick="appendNumber('6')">6</button>
+                <button class="btn operator" onclick="setOperator('*')">x</button>
+
+                <button class="btn" onclick="appendNumber('1')">1</button>
+                <button class="btn" onclick="appendNumber('2')">2</button>
+                <button class="btn" onclick="appendNumber('3')">3</button>
+                <button class="btn operator" onclick="setOperator('-')">-</button>
+
+                <button class="btn" onclick="appendNumber('0')">0</button>
+                <button class="btn" onclick="appendNumber('.')">.</button>
+                <button class="btn operator" onclick="setOperator('+')">+</button>
+            </div>
+            <div class="bottom-buttons">
+                <button class="btn equals" onclick="calculate()">=</button>
+                <button class="btn clear"  onclick="clearDisplay()">Limpiar</button>
+            </div>
+        </div>
+    </main>
+    <script src="../js/Calculadora.js"></script>
+</body>
+</html>

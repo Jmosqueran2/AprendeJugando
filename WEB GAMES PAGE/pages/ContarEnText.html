@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Texto</title>
+  <link rel="stylesheet" href="../css/StyleSN.css">
+  <link rel="icon" href="../img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+        <img src="../img/Designer.png" width="50" height="" alt="No se ha encontrado una imagen">
+        <h1 class="professional-text">
+            <span class="aprende">Aprende</span><span class="jugando">Jugando</span>
+        </h1>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="./SobreNosotros.html">Sobre Nosotros</a></li>
+            <li><a href="./Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="NivelElegir">
+  <h1>Contador de Texto</h1>
+</div>
+<div class="game-container">
+  <div class="exercise-selection">
+    <label for="text-input">Ingrese un texto:</label>
+    <textarea id="text-input" rows="5" cols="50"></textarea>
+    <button class="button play-button" onclick="tarea.countText()">Contar</button>
+    
+    <p id="char-count">Caracteres: 0</p>
+    <p id="vowel-count">Vocales: 0</p>
+    <p id="punct-count">Signos de puntuación: 0</p>
+    <p id="space-count">Espacios: 0</p>
+    <p id="word-count">Palabras: 0</p>
+    <p id="digit-count">Dígitos: 0</p>
+  </div>
+  
+  <script src="../js/2.JS"></script>
+</body>
+</html>

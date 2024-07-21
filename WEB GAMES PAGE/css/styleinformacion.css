@@ -1,0 +1,105 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../img/OQ3D1U0.jpg");
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; 
+    background-position: center; 
+    object-fit: cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+header img {
+    margin-right: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.professional-text {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.aprende {
+    color: #0044CC;
+}
+
+.jugando {
+    color: #FF0000;
+    text-shadow: -1px -1px 0 #585757,  
+                 1px -1px 0 #585757,
+                -1px  1px 0 #585757,
+                 1px  1px 0 #585757;
+}
+
+.professional-text::after {
+    content: attr(data-shadow);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    color: rgb(0, 0, 0);
+    z-index: -1;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    border: 6px solid black;
+    margin-top: 120px;   
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(133, 152, 252, 0.692);
+}
+
+h2 {
+    background-color: rgb(86, 216, 248);
+    text-align: center;
+    color: #000000;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 0.5px dashed black;
+    border-radius: 6px;
+    margin-top: 0;
+}
+
+.creators {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.creators p {
+    font-size: 24px;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.562);
+    padding: 10px;
+    border-radius: 5px;
+    flex-grow: 1;
+    border: 2px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    flex: none; 
+}

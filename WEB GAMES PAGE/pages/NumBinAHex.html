@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor Binario-Hexadecimal</title>
+  <link rel="stylesheet" href="../css/StyleSN.css">
+  <link rel="icon" href="../img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+        <img src="../img/Designer.png" width="50" height="" alt="No se ha encontrado una imagen">
+        <h1 class="professional-text">
+            <span class="aprende">Aprende</span><span class="jugando">Jugando</span>
+        </h1>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="./SobreNosotros.html">Sobre Nosotros</a></li>
+            <li><a href="./Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="NivelElegir">
+  <h1>Convertidor Binario-Hexadecimal</h1>
+</div>
+<div class="game-container">
+  <div class="exercise-selection">
+    <label for="binary-input">Ingrese un número binario:</label>
+    <input type="text" id="binary-input">
+    <button class="button play-button" onclick="tarea.convertToHex()">Convertir a Hexadecimal</button>
+    <p id="hex-output"></p>
+
+    <label for="hex-input">Ingrese un número hexadecimal:</label>
+    <input type="text" id="hex-input">
+    <button class="button play-button" onclick="tarea.convertToBinary()">Convertir a Binario</button>
+    <p id="binary-output"></p>
+  </div>
+  
+  <script src="../js/2.JS"></script>
+</body>
+</html>
